@@ -21,6 +21,5 @@ class StatementTest(unittest.TestCase):
         "Statement for BigCo\n As You Like It: $580.00 (35 seats)\nAmount owed is $580.00\nYou earned 12 credits\n")
 
     def test_Statement_Error(self):
-        self.assertRaises(ValueError, statement, invoice, {"as-like": {"name": "As You Like It", "type": "wrongtype"}
-        })
+        self.assertRaises(ValueError, statement, invoice, {"as-like": {"name": "As You Like It", "type": "wrongtype"}})
 
