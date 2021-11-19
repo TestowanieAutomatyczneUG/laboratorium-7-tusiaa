@@ -2,6 +2,7 @@ class hamming:
     def distance (self, a, b):
 
         r"""
+        >>> h = hamming()
         >>> h.distance("","")
         0
         >>> h.distance("A","A")
@@ -108,5 +109,5 @@ class hamming:
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod(extraglobs={'h': hamming()})
+    doctest.testmod()
   

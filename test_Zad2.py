@@ -2,6 +2,7 @@ class Password:
     def ValidPassword(self, password):
 
         r"""
+        >>> p = Password()
         >>> p.ValidPassword("")
         False
         >>> p.ValidPassword("Has1*")
@@ -67,6 +68,6 @@ class PasswordTest(unittest.TestCase):
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod(extraglobs={'p': Password()})
+    doctest.testmod()
     unittest.main()
 
